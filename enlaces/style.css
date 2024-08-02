@@ -1,0 +1,397 @@
+/* Coloca aquí el contenido del archivo CSS anterior (el que proporcionaste) */
+
+/*  background: linear-gradient(30deg, #131950,#1a2158, #084e5f, #203a47 );
+background-size: 600% 600%;
+animation: gradient 8s ease infinite;
+}*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+body{
+    background-color:#0000E8;
+   
+}
+#svg-container {
+    z-index: 1000;
+ }
+ .nav {
+    z-index: 999;
+ }
+ 
+ 
+ .inicio .contenido-banner .redes a {
+    z-index: 998;
+ }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.theme-light {
+    --color-main: #ffffff;
+    --color-text: #ffffff;
+}
+
+
+.Photo {
+   border: solid 2px white;
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 2px auto 2px;
+    margin-top: 40px;
+   
+    border-radius: 200%;
+}
+
+.Name {
+    color:#FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    font-family: 'Righteous';
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    color:#FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: 'Righteous';
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.verificado-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .verificado-container .nombre-ap {
+    color:#FFFFFF;
+    font-family: 'Sen';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 15px;
+  }
+  
+  .verificado-container img {
+    width: 20px; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    height: auto;
+    margin-left: 5px; /* Ajusta este valor para cambiar la distancia entre la palabra y la imagen */
+    margin-top: -8px; /* Ajusta este valor para alinear verticalmente la imagen con el texto */
+    order: 1; /* Cambia el orden para que la imagen aparezca después del texto */
+  }
+
+.cont-bio {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Sen';
+    margin: 12px 0 50px 0;
+}
+  
+  
+  
+  
+  
+/* Definir la animación */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px); /* Mover hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Volver a la posición original */
+    }
+}
+
+/* Aplicar la animación al elemento <h3> */
+.animate-heading {
+    animation: moveUpDown 2s ease-in-out infinite; /* 2s de duración, se repite infinitamente */
+}
+
+.inicio .contenido-banner .redes {
+    text-align: center; 
+   
+}
+
+.inicio .contenido-banner .redes a {
+    color: #FFFFFF;
+    display: inline-flex;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    margin: -90px 5px;
+    font-size: 30px;
+    transition: .3s;
+    align-items: center;
+    box-shadow: -8px 2px 0px rgb(0, 0, 0);
+    transform: 0.7s ease;
+    z-index: 999999999;
+
+}
+
+.inicio .contenido-banner .redes a:hover {
+   /* background-color: #b3afaf;*/
+    transform: translateX(5px) scale(1.02);
+}
+
+.links {
+    
+    text-align: center;
+    padding: 1px;
+    margin: -35px 25px 40px 0px;
+}
+
+.links ul li {
+    display: flex;
+    position: relative;
+    
+    height: auto;
+    border-radius: 40px;
+    z-index: 100;
+    overflow: hidden;
+    margin-bottom: 13px;
+    margin-right: 7px;
+    border: solid 2px white;
+    transition: .3s;
+    background-color:#0000E8;
+    box-shadow: -9px 4px 0px rgb(0, 0, 0);
+    color: white;
+
+
+    transition: transform 0.3s ease, /*box-shadow 0.3s ease*/;
+}
+
+.links ul li:hover {
+    transform: translateX(5px) scale(1.0);
+    opacity: 1;
+}
+
+
+
+.links ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.links ul li a img {
+    padding-left: 8px;
+}
+/* estilos de iconos de los links de linea*/
+.estilofoto {
+    width: 41px;
+    height: 41px;
+    padding: 4px 0 4px 0;
+
+}
+.estilos-icon {
+    width: 41px;
+    height: 41px;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 4px 0 4px 0;
+    margin: 0 0 0 1px;
+}
+
+
+
+
+.links ul li a p {
+    color: #FFFFFF;
+    font-family: 'Sen';
+    margin: 0;
+    line-height: 1.5;
+    width: 90%;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    padding: 0 50px 0 0;
+    text-decoration: none;
+}
+
+
+/* Estilos para hacer el botón responsive en pantallas pequeñas */
+@media (max-width: 320px) {
+    .social-links a {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px; /* Ajustar el padding para botones más chicos en móviles */
+    }
+    .social-links img {
+        margin-right: 10px; /* Restaurar el margen derecho de la imagen en móviles */
+        margin-bottom: 0; /* Eliminar el margen inferior para la imagen en móviles */
+    }
+    .social-links span {
+        margin-left: 0; /* Restaurar el margen izquierdo del texto en móviles */
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-family: 'Righteous';
+}
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.dev-by,
+.relevo {
+    font-size: 20px; /* Tamaño de la fuente del texto */
+}
+
+.image-container {
+    width: 50px; /* Tamaño deseado para la imagen */
+    height: auto; /* Tamaño deseado para la imagen */
+    margin: 0 0px; /* Ajuste de márgenes entre el texto y la imagen */
+}
+
+.foto2 {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupará todo el alto del contenedor */
+    margin: 1px 0 -10px 0 ;
+    
+}
+.hidden {
+  display: none;
+}
+
+/* Agregamos la clase 'loaded' para mostrar el contenido principal oculto */
+.loaded .Photo,
+.loaded .animate-heading,
+.loaded .links {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+/*body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://th.bing.com/th/id/R.72bd8ab37d17dd86ab6d1431f5fc2937?rik=udxk4jR337xZfQ&pid=ImgRaw&r=0');
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el área */
+   /* background-position: center;
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+   /* z-index: -99;
+    opacity: 100%;
+}*/
+
+h4 {
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Sen';
+    margin: 0 0 50px 0;
+    
+}
+h4 a {
+   
+   color: #FFFFFF;
+   font-size: 11px;
+   margin: 0 0 50px 0;
+}
+
+/*menu*/
+
+
+
+
+/* Estilos generales */
+body {
+    font-family:'Sen';
+}
+.hidden {
+    display: none;
+}
+/* Estilos para el menú desplegable */
+.dropdown {
+    z-index: 1000; /* Un valor más alto que el del menú principal */
+}
+
+/* Estilos para la barra de navegación */
+.nav {
+    display: inline-block;
+    
+    --img1: scale(1);
+    --img2: scale(0);
+    
+}
+
+.nav:has(.dropdown:target) {
+    --img1: scale(0);
+    --img2: scale(1);
+    --clip: inset(0 0 0 0);
+}
+
+.nav__container {
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "title img";
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.nav__title {
+    color: #FFFFFF;
+    grid-area: title;
+}
+
+.nav__menu {
+    grid-area: img;
+    position: relative;
+    z-index: 100;
+    transform: var(--img1);
+}
+
+.nav__menu--second {
+    transform: var(--img2);
+}
+
+.nav__icon {
+    width: 35px;
+    display: block;
+}
+
+.redes {
+  color: #FFFFFF;
+}
+
