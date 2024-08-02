@@ -62,7 +62,7 @@ body {
   width: 0%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: all 5.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 .menu-trigger-bar.top {
   width: 50%;
@@ -92,7 +92,7 @@ body {
   width: 0%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
-  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 3.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 .close-trigger-bar.left {
   transform: translateX(100px) translateY(-100px) rotate(-45deg);
@@ -196,7 +196,7 @@ body {
   opacity: 0;
   background-color: #222222;
   transform: translateX(100px);
-  transition: all 5.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 3.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 .menu-bg {

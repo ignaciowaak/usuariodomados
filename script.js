@@ -90,7 +90,7 @@ tlClose.add("close")
     menu.css('visibility','hidden');
   }
 }, "close")
-.to(logo, 3.9, {
+.to(logo, 1.0, {
   scale: 1, opacity: 1, ease: Power4.easeInOut
 }, "close", "+=0.2")
 .to(menuTop, 0.8, {
